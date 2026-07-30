@@ -2,4 +2,73 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--cover-image-path);
+  background-color: var(--cover-image-background);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'IBM Plex mono', sans-serif;
+  width:100%;
+  padding: 10px;
+}
+
+.header {
+    height: max(100dvh, 668px);
+    _background-color: green;
+}
+
+.header__theme-menu {
+  justify-self: flex-end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.decorated-zone {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content 1fr;
+}
+
+.header__theme-menu-button {
+    background-color: transparent;
+    padding: 1.5px 13px;
+    font-size: 1.125rem;
+    line-height: 1;
+    text-transform: lowercase;
+
+}
+
+.header__title {
+  grid-row: 2;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--title-color);
+}
+
+.header__text {
+  grid-row: 3;
+  align-self: center;
+}
+
+.title-decor {
+  display: block;
+  color: var(--decor-color);
+  background-color: var(--decor-bg);
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+.footer {
+  height: max(100dvh, 668px);
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: inherit;
+  font-weight: bold;
 }
