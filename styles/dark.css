@@ -12,6 +12,7 @@
     --title-color: #DB00FF;
     --accent-color: #FF0070;
     --section-color: #FF0070;
+    --menu-color: 255 0 112; /* #FF0070; */
   }
 }
 
@@ -27,4 +28,5 @@
     --title-color: #DB00FF;
     --accent-color: #FF0070;
     --section-color: #FF0070;
+    --menu-color: 255 0 112; /* #FF0070; */
 }
