@@ -67,24 +67,31 @@
     grid-template-rows: 1fr min-content 1fr;
 }
 
-.header__rec {
+.rec-sign {
   display: none;
-}
-
-.theme-dark .header__rec {
-  position: relative;
-  display: block;
 }
 
 .theme-dark .rec-sign {
   position: absolute;
-  display: block;
-  color: #fff;
-  z-index: 10;
+  color: var(--accent-color);
+  font-size: 1.125rem;
+  line-height: 1.38;
+  top: 12px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .theme-dark .rec-sign::after {
-  content: '*';
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+  flex-shrink: 0;
 }
 
 .header__theme-menu {
