@@ -4,11 +4,23 @@
   переключая тему
 */
 @media (prefers-color-scheme: light) {
-  .rec-sign {
+
+ .rec-sign {
     display: none;
   }
 }
 
+:root.theme-light {
+  --cover-image-path: url('../images/cover-image-light.png');
+  --cover-image-background: #FFC2E6;
+  --decor-color: #353430;
+  --text-color: #353430;
+  --title-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --section-color: #353430;
+  --menu-color: 53 52 48; /* #353430 */;
+}
+
 .theme-light .rec-sign {
-    display: none;
-  }
+  display: none;
+}
