@@ -16,27 +16,9 @@
   }
 
   .rec-sign {
-    position: absolute;
-    color: var(--accent-color);
-    font-size: 1.125rem;
-    line-height: 1.38;
-    top: 12px;
-    right: 20px;
     display: flex;
-    align-items: center;
-    gap: 10px;
   }
 
-  .rec-sign::after {
-    content: '';
-    display: block;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    box-shadow: 0px 0px 4px 2px var(--accent-color);
-    flex-shrink: 0;
-  }
 }
 
 :root.theme-dark {
@@ -55,34 +37,8 @@
 }
 
 .theme-dark .rec-sign {
-  position: absolute;
-  color: var(--accent-color);
-  font-size: 1.125rem;
-  line-height: 1.38;
-  top: 12px;
-  right: 20px;
   display: flex;
-  align-items: center;
-  gap: 10px;
 }
 
-.theme-dark .rec-sign::after {
-  content: '';
-  display: block;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
-  flex-shrink: 0;
-}
-
-@media (width >= 768px) {
-  .theme-dark .rec-sign,
-  .rec-sign {
-    top: 20px;
-    right: 29px;
-  }
-}
 
 
